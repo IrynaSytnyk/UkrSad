@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UkrSad</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,76 +17,76 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/20f5ce1d2d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/src/style.css" />
-    <title>UkrSad</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar scroll</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-md sticky-top">
+      <a class="navbar-brand font-size-nav">UkrSad</a
+      ><button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="container-fluid p-0">
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul
-            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            class="navbar-nav navbar-nav-scroll"
             style="--bs-scroll-height: 100px"
           >
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Рослини</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link">FAQ</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item">
+              <a class="nav-link">Фото з об’єктів</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Прайс</a>
+            </li>
+            <li class="nav-item d-block d-md-none">
+              <a class="nav-link">Контакти</a>
+            </li>
+            <li class="nav-item ms-auto d-none d-md-block">
+              <a class="nav-link">Контакти</a>
+            </li>
+            <li class="nav-item d-none d-md-block">
               <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Link
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+                class="nav-link"
+                href="https://www.instagram.com/ukrsad_official/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Link</a>
+            <li class="nav-item d-none d-md-block">
+              <a class="nav-link disabled pe-0"
+                ><i class="fa-solid fa-phone"></i> + 38 (097) 75 545 50</a
+              >
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
     <header>
       <div class="container-fluid header-container">
+        <img src="/img/logo.svg" alt="" class="header-logo" />
         <div class="row d-flex">
-          <div class="col-sm-6 align-self-center header-text">
+          <div class="col-sm-6 align-self-center header-text pe-0">
             <h1>
               Вирощуємо декоративні хвойні | листяні рослини для благоустрою
               вашої ділянки
@@ -97,16 +98,11 @@
               <div class="col-auto"><button>Зв’язатися</button></div>
             </div>
           </div>
-          <div class="col-sm-6">
-            <img src="/img/main.JPG" class="img-fluid" alt="" />
+          <div class="col-sm-6 ps-0">
+            <img src="/img/main.JPG" class="img-fluid header-img" alt="" />
           </div>
         </div>
       </div>
     </header>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
