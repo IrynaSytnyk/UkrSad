@@ -1,0 +1,29 @@
+html,
+body {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #113319;
+}
+
+header {
+  margin: 20px;
+}
+
+.header-container {
+  padding: 0;
+  width: 100%;
+  background-color: #f4f8f1;
+}
+
+.header-container img {
+  padding: 20px;
+}
+
+.header-text {
+  padding-left: 30px;
+}
