@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;0,600;1,500;1,600&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -49,7 +49,7 @@
             style="--bs-scroll-height: 100px"
           >
             <li class="nav-item">
-              <a class="nav-link" href="#">Рослини</a>
+              <a class="nav-link" href="#plants">Рослини</a>
             </li>
             <li class="nav-item">
               <a class="nav-link">FAQ</a>
@@ -84,18 +84,22 @@
     </nav>
     <header>
       <div class="container-fluid header-container">
-        <img src="/img/logo.svg" alt="" class="header-logo" />
+        <a href="/"> <img src="/img/logo.svg" alt="" class="header-logo" /></a>
         <div class="row d-flex">
-          <div class="col-sm-6 align-self-center header-text pe-0">
+          <div class="col-sm-6 align-self-center header-text">
             <h1>
-              Вирощуємо декоративні хвойні | листяні рослини для благоустрою
-              вашої ділянки
+              Вирощуємо декоративні <br />хвойні | листяні рослини для
+              благоустрою вашої ділянки
             </h1>
             <div class="row">
               <div class="col-auto">
-                <button class="btn">Дивитися каталог</button>
+                <a href="#plants" class="btn header-button">Дивитися каталог</a>
               </div>
-              <div class="col-auto"><button>Зв’язатися</button></div>
+              <div class="col-auto">
+                <a href="" class="btn header-button secondary-button"
+                  >Зв’язатися</a
+                >
+              </div>
             </div>
           </div>
           <div class="col-sm-6 ps-0">
@@ -104,5 +108,47 @@
         </div>
       </div>
     </header>
+    <div class="page-container worktype">
+      <h2>Чим займається <span class="main-color">UkrSad</span>?</h2>
+      <div class="border-line"></div>
+      <div class="row justify-content-around">
+        <div class="col-sm-4 item-worktype">
+          <img src="/img/worktype-01.svg" alt="" class="img-fluid" />
+          <h4>Рекомендації та продаж рослин</h4>
+        </div>
+        <div class="col-sm-4 item-worktype">
+          <img src="/img/worktype-02.svg" alt="" class="img-fluid" />
+          <h4>Ландшафтний дизайн</h4>
+        </div>
+        <div class="col-sm-4 item-worktype">
+          <img src="/img/worktype-03.svg" alt="" class="img-fluid" />
+          <h4>Консультації по вирощуванню</h4>
+        </div>
+      </div>
+    </div>
+    <div class="page-container plants" id="plants">
+      <h2>Наші рослини</h2>
+      <div class="border-line"></div>
+      <div class="row plants-row justify-content-between">
+        <div class="col-md-4 plants-item">
+          <img src="/img/plant-red-rocket.JPG" alt="" class="img-fluid" />
+          <h3>Барбарис Тунберга Red Carpet</h3>
+          <div class="plants-price">Ціна</div>
+        </div>
+        <div class="col-md-4 plants-item">
+          <img src="/img/plant-mirjam.JPG" alt="" class="img-fluid" />
+          <h3>Туя західна Mirjam</h3>
+          <div class="plants-price">Ціна</div>
+        </div>
+        <div class="col-md-4 plants-item">
+          <img src="/img/plant-smaragd.JPG" alt="" class="img-fluid" />
+          <h3>Туя західна Smaragd</h3>
+          <div class="plants-price">Ціна</div>
+        </div>
+      </div>
+      <div class="underline-link">
+        <a href="#plants">Дивитися каталог ></a>
+      </div>
+    </div>
   </body>
 </html>
