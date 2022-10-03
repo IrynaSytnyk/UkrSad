@@ -241,3 +241,13 @@ h4 {
   font-size: 14px;
   text-align: center;
 }
+
+.contacts {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.header-button:hover {
+  text-decoration: underline;
+  border: 1px solid #000;
+}
