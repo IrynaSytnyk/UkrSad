@@ -88,7 +88,7 @@ header {
   line-height: 1.5;
 }
 
-.header-button {
+.main-button {
   margin-top: 15px;
   padding: 7px 20px;
   background-color: var(--main-color);
@@ -130,11 +130,17 @@ h2 {
   text-transform: uppercase;
 }
 
-h4 {
+h3 {
   font-size: 16px;
   letter-spacing: 1.4px;
   margin-top: 20px;
   line-height: 1.5;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 15px;
 }
 
 .border-line {
@@ -184,12 +190,6 @@ h4 {
   object-fit: cover;
 }
 
-.plants-item h3 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 15px;
-}
-
 .plants-price {
   margin-top: 7px;
   padding: 7px 20px;
@@ -231,6 +231,8 @@ h4 {
   padding: 30px;
   border: none;
   transition: all 200ms ease-in-out;
+  font-size: 14px;
+  letter-spacing: 1.4px;
 }
 
 .faq-button:hover,
@@ -244,8 +246,9 @@ h4 {
   padding: 30px;
   border-radius: 0;
   border: none;
-  font-size: 14px;
   text-align: center;
+  font-size: 12px;
+  letter-spacing: 1.4px;
 }
 
 .contacts {
@@ -256,4 +259,115 @@ h4 {
 .header-button:hover {
   text-decoration: underline;
   border: 1px solid #000;
+}
+
+.navbar-toggler {
+  font-size: 12px;
+  border: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  box-shadow: none;
+}
+
+@media (max-width: 1020px) {
+  h1 {
+    font-size: 21px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  .navbar {
+    font-size: 9px;
+  }
+
+  .btn {
+    font-size: 11px;
+  }
+
+  .item-worktype {
+    max-width: 200px;
+  }
+
+  .plants-price {
+    font-size: 10px;
+    padding: 5px 15px;
+  }
+
+  .faq-button,
+  .faq-answer {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  .header-text {
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+  .header-buttons .main-button {
+    width: 170px;
+  }
+
+  .header-img-col {
+    display: none;
+  }
+
+  .header-logo {
+    width: 20%;
+    top: 100%;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .item-worktype {
+    max-width: 150px;
+  }
+
+  .plants {
+    text-align: center;
+    padding: 100px 0;
+  }
+
+  .plants-row {
+    padding-right: 0px;
+  }
+
+  .center-items {
+    justify-content: center;
+  }
+
+  .plants-item {
+    margin: 0 auto 20px auto;
+    max-height: 400px;
+  }
+
+  .plants .border-line {
+    width: 150px;
+  }
+
+  .sad-photo-gallery {
+    margin-top: 7px;
+  }
+}
+
+@media (max-width: 576px) {
 }
