@@ -124,7 +124,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.worktype h4 {
+h4 {
   font-size: 16px;
   letter-spacing: 1.4px;
   margin-top: 20px;
@@ -208,13 +208,36 @@ h2 {
 
 .faq {
   text-align: center;
-  margin-top: 100px;
   background-color: #afcc96;
   margin: 100px 20px 0 20px;
+  padding: 100px 20px;
 }
 
 .faq h2 {
-  padding-top: 50px;
   display: block;
   margin: 0 auto;
+}
+
+.faq-button {
+  background-color: #fff;
+  width: 400px;
+  margin-top: 100px;
+  padding: 30px;
+  border: none;
+  transition: all 200ms ease-in-out;
+}
+
+.faq-button:hover,
+.faq-button:focus {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.faq-answer {
+  width: 400px;
+  padding: 30px;
+  border-radius: 0;
+  border: none;
+  font-size: 14px;
+  text-align: center;
 }
