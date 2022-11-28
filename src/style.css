@@ -180,22 +180,39 @@ h4 {
   padding-right: 70px;
 }
 
-.plants-item {
-  max-width: 400px;
+.plants-content {
+  width: 300px;
 }
 
-.plants-item img {
-  height: 80%;
+.plants-image {
   width: 100%;
+  height: 350px;
   object-fit: cover;
 }
 
 .plants-price {
-  margin-top: 7px;
-  padding: 7px 20px;
   background-color: var(--main-color);
+  width: 100px;
+  text-align: center;
   color: #fff;
   font-size: 14px;
+}
+
+.plants-height {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.plants-content {
+  height: 100%;
+}
+
+.plants-price,
+.plants-height {
+  height: 100%;
+  padding: 7px 0px;
+  margin-top: 7px;
+
   letter-spacing: 1.4px;
   border-radius: 0;
   text-transform: uppercase;
@@ -364,6 +381,21 @@ h4 {
   color: var(--main-color);
 }
 
+.plants-container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.plants-type .btn {
+  width: 120px;
+}
+
+@media (max-width: 1410px) {
+  .plants-hidden {
+    display: none;
+  }
+}
+
 @media (max-width: 1020px) {
   h1 {
     font-size: 21px;
@@ -394,9 +426,10 @@ h4 {
     max-width: 200px;
   }
 
-  .plants-price {
+  .plants-price,
+  .plants-height {
     font-size: 10px;
-    padding: 5px 15px;
+    padding: 5px 10px;
   }
 
   .faq-button,
@@ -414,6 +447,40 @@ h4 {
 
   .plants-heading {
     padding: 100px 0 60px 0;
+  }
+
+  .plants-row-margin {
+    margin-top: 90px;
+  }
+
+  .plants-content p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .plants-height,
+  .plants-price {
+    font-size: 10px;
+  }
+
+  .plants-height {
+    padding-left: 0;
+  }
+
+  .plants-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .plants-row {
+    padding-right: 0px;
+  }
+
+  .plants,
+  .plants-container {
+    text-align: center;
+    padding: 100px 20px;
   }
 }
 
@@ -448,23 +515,17 @@ h4 {
     max-width: 150px;
   }
 
-  .plants,
-  .plants-container {
-    text-align: center;
-    padding: 100px 0;
-  }
-
-  .plants-row {
-    padding-right: 0px;
-  }
-
   .center-items {
     justify-content: center;
   }
 
-  .plants-item {
+  .plants-content {
     margin: 0 auto 20px auto;
-    max-height: 400px;
+    width: 250px;
+  }
+
+  .plants-image {
+    height: 250px;
   }
 
   .plants .border-line {
@@ -481,5 +542,13 @@ h4 {
 
   .catalog-link {
     margin-right: 0px;
+  }
+
+  .plants-row-margin {
+    margin-top: 0;
+  }
+
+  .plants-item {
+    margin-top: 50px;
   }
 }
