@@ -280,6 +280,11 @@ h4 {
   padding: 100px 0;
 }
 
+.contacts h5 a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
 .header-button:hover {
   text-decoration: underline;
   border: 1px solid #000;
